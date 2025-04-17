@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JiGu | Project Detail</title>
+    <title>Thread | Project Detail</title>
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -17,7 +17,6 @@
         max-width: 900px;
         margin: 0 auto;
       }
-
       .project-detail-container h2 {
         font-size: 2em;
         margin-bottom: 20px;
@@ -28,39 +27,30 @@
         margin-left: 50%;
         transform: translateX(-50%);
       }
-
       .project-detail-container h2::after {
         content: "";
         display: block;
         width: 60px;
         height: 2px;
-        background: #3498db;
+        background: #9b59b6;
         margin: 10px auto 0 auto;
       }
-
       .project-detail-container p,
       .project-detail-container ul {
         color: #74808a;
         font-size: 1em;
       }
-
-      .project-detail-container ul {
-        padding-left: 20px;
-      }
-
       .project-links {
         margin-top: 40px;
         text-align: center;
       }
-
       .project-links a {
         display: inline-block;
         margin: 0 10px;
-        color: #3498db;
+        color: #9b59b6;
         font-weight: bold;
         text-decoration: none;
       }
-
       .project-links a:hover {
         text-decoration: underline;
       }
@@ -71,19 +61,18 @@
     <div
       id="lead"
       style="
-        background-image: url('images/jigu-project.jpg');
+        background-image: url('images/thread-project.jpg');
         background-size: cover;
         background-position: center;
       "
     >
-      <!-- Back Button -->
       <a
         href="index.html"
         style="
           position: absolute;
           top: 20px;
           left: 20px;
-          color: #ffffff;
+          color: #fff;
           background-color: rgba(0, 0, 0, 0.3);
           padding: 8px 14px;
           border-radius: 6px;
@@ -94,20 +83,17 @@
       >
         ← Back to Portfolio
       </a>
-
-      <!-- 타이틀 -->
       <div id="lead-content">
-        <h1 style="color: #ffffff">JiGu</h1>
-        <h2>Empowering Vegetarian Lifestyles</h2>
+        <h1 style="color: white">THREAD</h1>
+        <h2>Recycling App with UX Research</h2>
         <a
-          href="assets/JiGu_Manual.pdf"
+          href="https://docs.google.com/presentation/d/1vlY3V5Sa7gRQS4kw-NUEBueU-vqZS1-2/edit?usp=sharing"
           class="btn-rounded-white"
           target="_blank"
         >
           View Presentation
         </a>
       </div>
-
       <div id="lead-overlay"></div>
       <div id="lead-down">
         <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
@@ -117,94 +103,63 @@
     <div class="project-detail-container">
       <h2>Summary</h2>
       <p>
-        <strong>JiGu</strong> is a mobile application designed to support and
-        promote a healthy vegetarian lifestyle. The app provides features like
-        restaurant search, food information lookup, personalized recipe
-        recommendations powered by ChatGPT, and a community platform that
-        connects users and supports sustainable food practices.
+        <strong>Thread</strong> is a recycling app designed to improve waste
+        classification and user engagement through UX/UI design. Based on user
+        interviews, AS-IS analysis, and usability research, Thread integrates
+        practical and intuitive recycling education into daily life.
       </p>
 
-      <h2>Development Period</h2>
+      <h2>Develop Period</h2>
       <ul>
-        <li><strong>Start:</strong> October 2023</li>
-        <li><strong>End:</strong> November 2023</li>
+        <li>March 2024 – June 2024</li>
       </ul>
 
-      <h2>Platform & Tech Stack</h2>
+      <h2>Platform</h2>
       <ul>
-        <li><strong>OS:</strong> Android</li>
-        <li><strong>Language:</strong> Kotlin</li>
-        <li><strong>Database:</strong> RoomDB (local), Firebase (cloud)</li>
-        <li><strong>IDE:</strong> Android Studio</li>
-        <li>
-          <strong>APIs & Libraries:</strong> ChatGPT, Retrofit, Glide, Firebase
-        </li>
+        <li><strong>Figma:</strong> UI/UX design and user flow prototyping</li>
+        <li><strong>Google Slides:</strong> Presentation & research report</li>
       </ul>
 
       <h2>Team</h2>
       <ul>
+        <li><strong>Team Size:</strong> 4 Members</li>
+        <li><strong>Lee Jeonghyeon:</strong> UX Research & Design Planning</li>
         <li>
-          <strong>Lee Jeonghyeon:</strong> Architecture Design, ChatGPT
-          Integration, Community Platform
-        </li>
-        <li>
-          <strong>Chu Yulim:</strong> UI Implementation, Food Information
-          Search, Restaurant Finder
+          <strong>Other members:</strong> Interviews, Persona Analysis, UI
+          Mockups
         </li>
       </ul>
 
       <h2>Main Features</h2>
       <ul>
-        <li>
-          <strong>Restaurant Search:</strong> Locate nearby vegetarian-friendly
-          restaurants with ingredient details.
-        </li>
-        <li>
-          <strong>Food Info Lookup:</strong> Access nutritional data using
-          barcodes and search queries.
-        </li>
-        <li>
-          <strong>Personalized Recipes:</strong> Receive ChatGPT-based recipe
-          suggestions tailored to user preferences.
-        </li>
-        <li>
-          <strong>Community Space:</strong> Share experiences and connect with
-          fellow vegetarians.
-        </li>
-        <li>
-          <strong>Sustainability:</strong> Encourage eco-conscious eating habits
-          and support local food culture.
-        </li>
+        <li>User education for proper recycling with gamified missions</li>
+        <li>Daily recycling checklist to encourage habit formation</li>
+        <li>Product barcode scanning for disposal instructions</li>
+        <li>Badge & level system for user motivation</li>
       </ul>
 
-      <h2>Contribution</h2>
+      <h2>UX Process</h2>
       <ul>
-        <li>Developed GPT-integrated personalized recipe generator</li>
-        <li>Designed core data flow and Firebase real-time synchronization</li>
-        <li>Enhanced nutritional info system with reliable API sources</li>
-      </ul>
-
-      <h2>Troubleshooting</h2>
-      <ul>
-        <li>
-          <strong>Issue:</strong> Difficulty with reliable API response and
-          syncing user data across modules
-        </li>
-        <li>
-          <strong>Solution:</strong> Firebase real-time DB integration and
-          error-handling mechanisms
-        </li>
-        <li>
-          <strong>Result:</strong> Reduced latency, improved reliability in
-          multi-user interactions
-        </li>
+        <li>Interviewed 10+ users to gather needs and pain points</li>
+        <li>Conducted AS-IS analysis of existing recycling apps</li>
+        <li>Defined personas and created journey maps</li>
+        <li>Designed wireframes and interactive prototype with Figma</li>
       </ul>
 
       <h2>Links</h2>
       <div class="project-links">
-        <a href="https://github.com/jeonghyeonee/jigu" target="_blank"
-          ><i class="fa fa-github"></i> GitHub</a
+        <a
+          href="https://www.figma.com/proto/L5vXcrnpf4vqDkz9q8sJIA/%EC%93%B0%EB%A0%88%EB%93%9C-UX-UI?node-id=136-307&p=f"
+          target="_blank"
         >
+          <i class="fa fa-link"></i> Figma Prototype
+        </a>
+        <a
+          href="https://docs.google.com/presentation/d/1vlY3V5Sa7gRQS4kw-NUEBueU-vqZS1-2/edit?usp=sharing"
+          target="_blank"
+        >
+          <i class="fa fa-file-powerpoint-o"></i> Google Slides
+        </a>
       </div>
     </div>
 

@@ -680,6 +680,11 @@ footer {
   }
   #about p {
     text-align: left;
+    margin: 0 auto 15px;
+    max-width: 800px;
+    white-space: normal; /* 텍스트 줄 바꿈 허용 */
+    overflow: visible; /* 넘친 텍스트 숨기지 않기 */
+    text-overflow: unset; /* 생략 부호(...) 제거 */
   }
 }
 @media only screen and (max-width: 768px) {
@@ -772,4 +777,121 @@ footer {
 
 .heading.text-center {
   text-align: center;
+}
+
+.project-tags {
+  margin: 10px 0;
+}
+
+.project-tags .tag {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 4px 10px;
+  margin: 2px;
+  border-radius: 20px;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+#leadership {
+  padding: 50px 15px;
+  text-align: center;
+  border-bottom: 1px solid #dcd9d9; /* 추가하면 섹션 구분도 좋아요 */
+}
+
+#leadership-timeline {
+  margin: 30px auto 0 auto;
+  position: relative;
+  max-width: 1000px;
+}
+
+#leadership-timeline:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 303px;
+  height: 100%;
+  width: 3px;
+  background: #3498db;
+  z-index: 0;
+}
+
+#leadership-timeline:after {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 80px;
+  background: linear-gradient(to bottom, #3498db, rgba(52, 152, 219, 0));
+  top: 100%;
+  left: 303px;
+  z-index: 1;
+}
+
+#leadership-timeline .vtimeline-point {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#leadership-timeline .vtimeline-icon {
+  position: relative;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  background: #3498db;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em; /* 아이콘 크기 조절 */
+  margin-left: 280px;
+  z-index: 99;
+}
+
+#leadership-timeline .vtimeline-icon i {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em; /* 아이콘 크기 줄이기 */
+  line-height: 1; /* 아이콘이 세로 중앙에 정렬되도록 */
+}
+
+#leadership-timeline .vtimeline-date {
+  width: 260px;
+  text-align: right;
+  position: absolute;
+  left: 0;
+  top: 15px;
+  font-weight: 300;
+  color: #374054;
+}
+
+#leadership-timeline .vtimeline-content {
+  margin-left: 350px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  padding: 15px;
+  border-radius: 3px;
+  text-align: left;
+}
+
+#leadership-timeline .vtimeline-content h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #374054;
+  margin: 0 0 5px;
+}
+
+#leadership-timeline .vtimeline-content h4 {
+  font-size: 1em;
+  font-weight: 300;
+  color: #7e8890;
+  margin: 0 0 10px;
+}
+
+#leadership-timeline .vtimeline-content ul {
+  padding-left: 20px;
+  margin: 0;
+  color: #74808a;
+  font-size: 0.9em;
 }

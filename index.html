@@ -30,6 +30,7 @@
         <li><a href="#education">Education</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#leadership">Leadership</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </header>
@@ -65,21 +66,36 @@
             <!-- 제목 및 자기소개 -->
             <h2 class="heading">About Me</h2>
             <p>
-              Hello! I'm Jeonghyeon, a developer and data engineer passionate
-              about building meaningful, human-centered AI systems. With a
-              background in IT Management from SeoulTech and internship
-              experience at Intel and SAS Korea, I focus on designing
-              intelligent tools that connect backend infrastructure with
-              real-world user needs.
+              Hi! I'm Jeonghyeon, a developer and data engineer who enjoys
+              building meaningful and user-friendly tech solutions. My
+              background in IT Management, along with hands-on experience at
+              Intel and SAS Korea, has helped me understand how data and systems
+              can work together to solve real-world problems.
+            </p>
+            <p>
+              I’m especially interested in AI-powered tools, UX-focused
+              development, and data-driven insights. From creating a
+              ChatGPT-integrated mobile app to analyzing social media trends
+              with big data, I strive to blend technology with purpose. Let’s
+              build things that matter.
             </p>
 
-            <p>
-              My projects include building a ChatGPT-powered vegetarian
-              recommendation app and analyzing 200,000 tweets to identify
-              consumption patterns based on K-drama trends. These experiences
-              sparked my interest in interactive machine learning,
-              explainability, and decision-support systems.
-            </p>
+            <!-- 🔗 링크드인 & 이메일 추가 -->
+            <div style="margin-top: 20px">
+              <a
+                href="https://www.linkedin.com/in/jeonghyeon-lee-9b6380223"
+                target="_blank"
+              >
+                <img
+                  src="https://img.shields.io/badge/JeonghyeonLee-0A66C2?style=flat-square&logo=linkedin&logoColor=white"
+                />
+              </a>
+              <a href="mailto:workhappyj@gmail.com" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/JeonghyeonLee-EA4335?style=flat-square&logo=Gmail&logoColor=white"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -147,6 +163,13 @@
                 recommendations using ChatGPT fine-tuning, Kotlin, Firebase, and
                 Naver APIs.
               </p>
+              <div class="project-tags">
+                <span class="tag">#ChatGPT</span>
+                <span class="tag">#Firebase</span>
+                <span class="tag">#Kotlin</span>
+                <span class="tag">#Android</span>
+                <span class="tag">#Vegetarian</span>
+              </div>
               <a href="jigu.html">View Project</a>
             </div>
           </div>
@@ -161,6 +184,14 @@
                 trends with consumer product recommendations via a web
                 interface.
               </p>
+              <div class="project-tags">
+                <span class="tag">#Hadoop</span>
+                <span class="tag">#MySQL</span>
+                <span class="tag">#Twitter</span>
+                <span class="tag">#KDrama</span>
+                <span class="tag">#DataMining</span>
+              </div>
+
               <a href="trend-catcher.html">View Project</a>
             </div>
           </div>
@@ -174,6 +205,14 @@
                 Predicted bike demand using time, location, and weather data
                 with XGBoost & LGBM ensemble models — improved accuracy by 27%.
               </p>
+              <div class="project-tags">
+                <span class="tag">#XGBoost</span>
+                <span class="tag">#LightGBM</span>
+                <span class="tag">#Forecasting</span>
+                <span class="tag">#BikeData</span>
+                <span class="tag">#EnsembleModel</span>
+              </div>
+
               <a href="bike-project.html">View Project</a>
             </div>
           </div>
@@ -193,6 +232,15 @@
                 and physical wellness through accessible, user-friendly
                 features.
               </p>
+
+              <div class="project-tags">
+                <span class="tag">#AI</span>
+                <span class="tag">#ElderlyCare</span>
+                <span class="tag">#Android</span>
+                <span class="tag">#ChatGPT</span>
+                <span class="tag">#CognitiveHealth</span>
+              </div>
+
               <a href="memoriary.html">View Project</a>
             </div>
           </div>
@@ -207,18 +255,36 @@
                 numbers and expiry dates using homomorphic encryption via the
                 PI-HEAAN library.
               </p>
+              <div class="project-tags">
+                <span class="tag">#Flask</span>
+                <span class="tag">#Encryption</span>
+                <span class="tag">#HEAAN</span>
+                <span class="tag">#CreditCard</span>
+                <span class="tag">#Security</span>
+              </div>
+
               <a href="cardify.html">View Project</a>
             </div>
           </div>
           <div class="project shadow-large">
             <div class="project-image">
-              <img src="images/thread_project.jpg" />
+              <img src="images/thread-project.jpg" />
             </div>
             <div class="project-info">
               <h3>Thread(쓰레드)</h3>
               <p>
-                <!-- TODO -->
+                A UX/UI research-based recycling app designed through user
+                interviews and AS-IS analysis. It provides gamified recycling
+                missions and barcode scanning for smarter waste disposal.
               </p>
+              <div class="project-tags">
+                <span class="tag">#UXResearch</span>
+                <span class="tag">#Figma</span>
+                <span class="tag">#Gamification</span>
+                <span class="tag">#Sustainability</span>
+                <span class="tag">#UserInterview</span>
+              </div>
+
               <a href="thread.html">View Project</a>
             </div>
           </div>
@@ -246,28 +312,70 @@
       </ul>
     </div>
 
-    <div id="contact">
-      <h2>Contact</h2>
-      <div id="contact-form">
-        <form method="POST" action="https://formspree.io/f/mnqkzzlw">
-          <input
-            type="hidden"
-            name="_subject"
-            value="Contact request from portfolio"
-          />
-          <input
-            type="email"
-            name="_replyto"
-            placeholder="Your email"
-            required
-          />
-          <textarea
-            name="message"
-            placeholder="Your message"
-            required
-          ></textarea>
-          <button type="submit">Send</button>
-        </form>
+    <!-- Leadership Experience -->
+    <div id="leadership" class="background-alt">
+      <h2 class="heading">Leadership Experience</h2>
+      <div id="leadership-timeline">
+        <div class="vtimeline-point">
+          <div class="vtimeline-icon"><i class="fa fa-star"></i></div>
+          <div class="vtimeline-date">Aug 2023 – Aug 2024</div>
+          <div class="vtimeline-content">
+            <h3>Core, GDSC (Google Developer Student Club) SeoulTech</h3>
+            <h4>Deep Learning Team Lead</h4>
+            <ul>
+              <li>Led Deep Learning studies using PyTorch</li>
+              <li>
+                Developed an Android app for ecological mapping using Google
+                Gemini
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="vtimeline-point">
+          <div class="vtimeline-icon"><i class="fa fa-cloud"></i></div>
+          <div class="vtimeline-date">Jul 2023 – Feb 2025</div>
+          <div class="vtimeline-content">
+            <h3>Captain, ACC (AWS Cloud Club) SeoulTech</h3>
+            <h4>Cloud Study & System Design</h4>
+            <ul>
+              <li>
+                Presented and studied AWS databases like DynamoDB, RDS, and S3
+              </li>
+              <li>Led study sessions on system architecture using AWS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="vtimeline-point">
+          <div class="vtimeline-icon"><i class="fa fa-users"></i></div>
+          <div class="vtimeline-date">May 2021 – Feb 2025</div>
+          <div class="vtimeline-content">
+            <h3>President, STEM (SeoulTech Encouraging Mentor)</h3>
+            <h4>Mentorship Program Leader</h4>
+            <ul>
+              <li>
+                Provided career mentoring for middle and high school students
+              </li>
+              <li>Organized university admission counseling sessions</li>
+            </ul>
+          </div>
+        </div>
+        <div class="vtimeline-point">
+          <div class="vtimeline-icon"><i class="fa fa-database"></i></div>
+          <div class="vtimeline-date">Jul 2021 – Aug 2022</div>
+          <div class="vtimeline-content">
+            <h3>President, BOAZ (Big Data is Our A to Z)</h3>
+            <h4>Data Engineering Lead</h4>
+            <ul>
+              <li>
+                Led studies and projects in Hadoop, Spark, AWS, Kubernetes, and
+                Docker
+              </li>
+              <li>
+                Built a Hadoop cluster optimization system and MapReduce monitor
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
