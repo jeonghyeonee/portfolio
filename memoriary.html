@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memoriary | Project Detail</title>
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      .text-center {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Lead Section -->
+    <div
+      id="lead"
+      style="
+        background-image: url('images/memoriary-cover.jpg');
+        background-size: cover;
+      "
+    >
+      <div id="lead-content">
+        <h1>Memoriary</h1>
+        <h2>Memory-Support App for the Elderly</h2>
+      </div>
+      <div id="lead-overlay"></div>
+      <div id="lead-down">
+        <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container" style="padding: 50px 15px">
+      <h2 class="heading text-center">Summary</h2>
+      <p>
+        <strong>Memoriary</strong> is an innovative app designed to support the
+        elderly in preventing memory loss by combining diary, to-do list, and
+        exercise features with cognitive quizzes. Through advanced technologies
+        like OpenAI and Android sensors, it promotes mental and physical health
+        in an aging society.
+      </p>
+
+      <h2 class="heading text-center">Development Period</h2>
+      <ul>
+        <li><strong>Start:</strong> September 2023</li>
+        <li><strong>End:</strong> December 2023</li>
+      </ul>
+
+      <h2 class="heading text-center">Platform & Tech Stack</h2>
+      <ul>
+        <li><strong>OS:</strong> Android</li>
+        <li><strong>Language:</strong> Kotlin</li>
+        <li><strong>Database:</strong> RoomDB + Firebase</li>
+        <li><strong>IDE:</strong> Android Studio</li>
+        <li><strong>APIs:</strong> OpenAI GPT, DALL·E2, Android Sensors</li>
+      </ul>
+
+      <h2 class="heading text-center">Team</h2>
+      <ul>
+        <li><strong>Lee Jeonghyeon:</strong> To-Do, Sign In, Nav Bar</li>
+        <li><strong>Park Hyun Seo:</strong> Exercise, Quiz, My Page</li>
+        <li><strong>Kim Siheon:</strong> Diary, Nav Bar</li>
+      </ul>
+
+      <h2 class="heading text-center">Features</h2>
+      <ul>
+        <li><strong>Diary:</strong> Voice-based input + DALL·E2 thumbnails</li>
+        <li><strong>To-Do:</strong> Calendar + done list</li>
+        <li><strong>Exercise:</strong> Shake/clap using Android Sensor API</li>
+        <li><strong>Quiz:</strong> Daily GPT-based memory tests</li>
+        <li><strong>Membership:</strong> Login via ID/PW or fingerprint</li>
+        <li><strong>My Page:</strong> View/edit user profile</li>
+      </ul>
+
+      <h2 class="heading text-center">Troubleshooting & Solution</h2>
+      <p>
+        Faced issues with LiveData causing UI delays. Applied an Observer
+        pattern and asynchronous operations using background threads to ensure a
+        smooth user experience.
+      </p>
+
+      <!-- Links Section -->
+      <div class="project-links text-center" style="margin-top: 50px">
+        <h2 class="heading">Links</h2>
+        <a href="https://github.com/jeonghyeonee/Memoriary" target="_blank">
+          <i class="fa fa-github"></i> GitHub
+        </a>
+        <span style="margin: 0 15px"></span>
+        <a href="https://www.youtube.com/watch?v=j5adWDyW67Q" target="_blank">
+          <i class="fa fa-youtube-play"></i> YouTube
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      style="padding: 30px 0; text-align: center; background-color: #f2f2f5"
+    >
+      <p>&copy; 2025 Lee JeongHyeon</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>

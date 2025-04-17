@@ -467,7 +467,15 @@ footer {
 }
 .project-image {
   float: left;
+  width: 250px;
 }
+
+.project-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
 .project-info {
   position: absolute;
   top: 50%;
@@ -755,4 +763,8 @@ footer {
   margin: 10px auto 20px auto;
   display: block;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading.text-center {
+  text-align: center;
 }
