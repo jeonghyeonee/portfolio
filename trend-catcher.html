@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trend Catcher | Project Detail</title>
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
+      rel="stylesheet"
+    />
+    <style>
+      .project-detail-container {
+        padding: 80px 15px;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .project-detail-container h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #374054;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        margin-left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .project-detail-container h2::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 2px;
+        background: #3498db;
+        margin: 10px auto 0 auto;
+      }
+
+      .project-detail-container p,
+      .project-detail-container ul {
+        color: #74808a;
+        font-size: 1em;
+      }
+
+      .project-detail-container ul {
+        padding-left: 20px;
+      }
+
+      .project-links {
+        margin-top: 40px;
+        text-align: center;
+      }
+
+      .project-links a {
+        display: inline-block;
+        margin: 0 10px;
+        color: #3498db;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .project-links a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div
+      id="lead"
+      style="
+        background-image: url('images/trendcatcher.jpg');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <a
+        href="index.html"
+        style="
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          color: #ffffff;
+          background-color: rgba(0, 0, 0, 0.3);
+          padding: 8px 14px;
+          border-radius: 6px;
+          font-weight: bold;
+          text-decoration: none;
+          z-index: 1000;
+        "
+      >
+        ← Back to Portfolio
+      </a>
+
+      <!-- 타이틀 영역 -->
+      <div id="lead-content">
+        <h1 style="color: #ffffff">TrenD Catcher</h1>
+        <h2>Big Data × SNS × Recommendation</h2>
+        <a
+          href="assets/TrenDCatcher.pdf"
+          class="btn-rounded-white"
+          target="_blank"
+        >
+          View Presentation
+        </a>
+      </div>
+
+      <div id="lead-overlay"></div>
+      <div id="lead-down">
+        <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+      </div>
+    </div>
+
+    <div class="project-detail-container">
+      <h2>Summary</h2>
+      <p>
+        <em
+          ><strong
+            >"Is it possible to find the backward linkage effect through Twitter
+            tweets, the world's largest SNS?"</strong
+          ></em
+        >
+        <br /><br />
+        <strong>Trend Catcher</strong> analyzes industrial groups and products
+        emerging due to popular dramas. By tracking Twitter trends, it
+        recommends relevant products and predicts demand in connected
+        industries.
+      </p>
+
+      <h2>Development Period</h2>
+      <ul>
+        <li><strong>Start:</strong> February 2022</li>
+        <li><strong>End:</strong> June 2022</li>
+      </ul>
+
+      <h2>Platform & Tech Stack</h2>
+      <ul>
+        <li><strong>OS:</strong> Linux (AWS EC2)</li>
+        <li><strong>Languages:</strong> Python, PHP, JavaScript</li>
+        <li><strong>Frontend:</strong> HTML, JS, PHP</li>
+        <li><strong>Backend:</strong> Hadoop, Hive, Sqoop, MySQL</li>
+      </ul>
+
+      <h2>Team</h2>
+      <ul>
+        <li>
+          <strong>Lee Jeonghyeon:</strong> Data Processing and Integration
+        </li>
+        <li><strong>Choi Jina:</strong> Web UI & Development</li>
+        <li><strong>Pi Yujin:</strong> Data Crawling & Preprocessing</li>
+        <li><strong>Hwang Yujeong:</strong> Data Analysis & Visualization</li>
+      </ul>
+
+      <h2>Key Features</h2>
+      <ul>
+        <li>
+          Twitter-based trend analysis for product and industry recommendation
+        </li>
+        <li>Full-stack web development for visual insights</li>
+        <li>Big Data processing with Hadoop, Hive, and MySQL integration</li>
+      </ul>
+
+      <h2>Troubleshooting</h2>
+      <ul>
+        <li>
+          <strong>Issue:</strong> Storage failures on local VMs using VMware
+        </li>
+        <li>
+          <strong>Solution:</strong> Migrated to AWS EC2 (5 nodes) for
+          distributed services
+        </li>
+        <li><strong>Result:</strong> Increased scalability and reliability</li>
+      </ul>
+
+      <h2>Links</h2>
+      <div class="project-links">
+        <a href="https://github.com/jeonghyeonee/TrenD_Catcher" target="_blank"
+          ><i class="fa fa-github"></i> GitHub</a
+        >
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 copyright">
+            <p>© <span id="current-year">2025</span> Lee JeongHyeon</p>
+          </div>
+          <div class="col-sm-2 top">
+            <span id="to-top">
+              <i class="fa fa-chevron-up" aria-hidden="true"></i>
+            </span>
+          </div>
+          <div class="col-sm-5 social">
+            <ul>
+              <li>
+                <a href="https://github.com/jeonghyeonee" target="_blank"
+                  ><i class="fa fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/jeonghyeonee" target="_blank"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>

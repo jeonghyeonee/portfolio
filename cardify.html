@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardify | Project Detail</title>
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
+      rel="stylesheet"
+    />
+    <style>
+      .project-detail-container {
+        padding: 80px 15px;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .project-detail-container h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #374054;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        margin-left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .project-detail-container h2::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 2px;
+        background: #3498db;
+        margin: 10px auto 0 auto;
+      }
+
+      .project-detail-container p,
+      .project-detail-container ul {
+        color: #74808a;
+        font-size: 1em;
+      }
+
+      .project-detail-container ul {
+        padding-left: 20px;
+      }
+
+      .project-links {
+        margin-top: 40px;
+        text-align: center;
+      }
+
+      .project-links a {
+        display: inline-block;
+        margin: 0 10px;
+        color: #3498db;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .project-links a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div
+      id="lead"
+      style="
+        background-image: url('images/cardify_project.jpg');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <a
+        href="index.html"
+        style="
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          color: #ffffff;
+          background-color: rgba(0, 0, 0, 0.3);
+          padding: 8px 14px;
+          border-radius: 6px;
+          font-weight: bold;
+          text-decoration: none;
+          z-index: 1000;
+        "
+      >
+        ← Back to Portfolio
+      </a>
+
+      <!-- 타이틀 영역 -->
+      <div id="lead-content">
+        <h1 style="color: #ffffff">Cardify</h1>
+        <h2>Secure Credit Card Validation with Homomorphic Encryption</h2>
+        <a
+          href="assets/Memoriary.pdf"
+          class="btn-rounded-white"
+          target="_blank"
+        >
+          View Presentation
+        </a>
+      </div>
+
+      <div id="lead-overlay"></div>
+      <div id="lead-down">
+        <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+      </div>
+    </div>
+
+    <div class="project-detail-container">
+      <h2>Summary</h2>
+      <p>
+        <strong>Cardify</strong> is a Python web application that provides
+        secure validation of credit card numbers and expiry dates using the
+        PI-HEAAN library for homomorphic encryption. Users can input their
+        credit card information through a user-friendly web interface, ensuring
+        data privacy and security during the validation process.
+      </p>
+
+      <h2>Development Period</h2>
+      <ul>
+        <li><strong>Start:</strong> February 2024</li>
+        <li><strong>End:</strong> June 2024</li>
+      </ul>
+
+      <h2>Platform & Tech Stack</h2>
+      <ul>
+        <li><strong>OS:</strong> Windows</li>
+        <li><strong>Languages:</strong> Python, HTML, JavaScript</li>
+        <li><strong>Framework:</strong> Flask + PI-HEAAN</li>
+        <li><strong>Database:</strong> None (Real-time processing)</li>
+      </ul>
+
+      <h2>Team</h2>
+      <ul>
+        <li>
+          <strong>Lee Jeonghyeon:</strong> Card Number and Expiry Date
+          Validation
+        </li>
+        <li>
+          <strong>Kim Sua:</strong> Card Brand Check and Expiry Date Validation
+        </li>
+      </ul>
+
+      <h2>Main Features</h2>
+      <ul>
+        <li>Credit card number validation using Luhn algorithm</li>
+        <li>Brand identification via homomorphic encryption</li>
+        <li>Expiry date validation using real-time comparison</li>
+      </ul>
+
+      <h2>Contribution</h2>
+      <ul>
+        <li>Implemented Luhn algorithm for secure validation</li>
+        <li>Developed expiry date verification logic using datetime</li>
+        <li>
+          Integrated PI-HEAAN with Flask server for real-time encrypted data
+          processing
+        </li>
+      </ul>
+
+      <h2>Troubleshooting</h2>
+      <ul>
+        <li>
+          <strong>Problem:</strong> Difficulty processing encrypted data
+          efficiently
+        </li>
+        <li>
+          <strong>Solution:</strong> Refactored encryption integration and
+          optimized logic handling
+        </li>
+        <li>
+          <strong>Result:</strong> Improved accuracy and response time for
+          encrypted validation
+        </li>
+      </ul>
+
+      <h2>Links</h2>
+      <div class="project-links">
+        <a href="https://github.com/jeonghyeonee/Cardify" target="_blank"
+          ><i class="fa fa-github"></i> GitHub</a
+        >
+        <a href="https://www.youtube.com/watch?v=UTeCs7ypJdw" target="_blank"
+          ><i class="fa fa-youtube-play"></i> YouTube</a
+        >
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 copyright">
+            <p>© <span id="current-year">2025</span> Lee JeongHyeon</p>
+          </div>
+          <div class="col-sm-2 top">
+            <span id="to-top">
+              <i class="fa fa-chevron-up" aria-hidden="true"></i>
+            </span>
+          </div>
+          <div class="col-sm-5 social">
+            <ul>
+              <li>
+                <a href="https://github.com/jeonghyeonee" target="_blank"
+                  ><i class="fa fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/jeonghyeonee" target="_blank"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>

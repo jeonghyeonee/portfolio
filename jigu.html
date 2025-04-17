@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JiGu | Project Detail</title>
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
+      rel="stylesheet"
+    />
+    <style>
+      .project-detail-container {
+        padding: 80px 15px;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .project-detail-container h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #374054;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        margin-left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .project-detail-container h2::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 2px;
+        background: #2ecc71;
+        margin: 10px auto 0 auto;
+      }
+
+      .project-detail-container p,
+      .project-detail-container ul,
+      .project-detail-container ol {
+        color: #74808a;
+        font-size: 1em;
+      }
+
+      .project-detail-container ul,
+      .project-detail-container ol {
+        padding-left: 20px;
+      }
+
+      .project-links {
+        margin-top: 40px;
+        text-align: center;
+      }
+
+      .project-links a {
+        display: inline-block;
+        margin: 0 10px;
+        color: #2ecc71;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .project-links a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div
+      id="lead"
+      style="
+        background-image: url('images/jigu-project.jpg');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <!-- Back Button -->
+      <a
+        href="index.html"
+        style="
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          color: #ffffff;
+          background-color: rgba(0, 0, 0, 0.3);
+          padding: 8px 14px;
+          border-radius: 6px;
+          font-weight: bold;
+          text-decoration: none;
+          z-index: 1000;
+        "
+      >
+        ← Back to Portfolio
+      </a>
+
+      <!-- 타이틀 영역 -->
+      <div id="lead-content">
+        <h1 style="color: #ffffff">JiGu</h1>
+        <h2>Empowering Vegetarian Lifestyles</h2>
+        <a
+          href="assets/jigu-prject.pdf"
+          class="btn-rounded-white"
+          target="_blank"
+        >
+          View JiGu Presentation
+        </a>
+      </div>
+
+      <div id="lead-overlay"></div>
+      <div id="lead-down">
+        <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+      </div>
+    </div>
+
+    <div class="project-detail-container">
+      <h2>Summary</h2>
+      <p>
+        <strong>JiGu</strong> is a mobile application that helps users lead a
+        vegetarian lifestyle with ease. It offers personalized recipes,
+        nutritional information, restaurant searches, barcode food checks,
+        chatbot assistance, and a community for vegetarians.
+      </p>
+
+      <h2>Features</h2>
+      <ul>
+        <li>
+          <strong>Restaurant Finder:</strong> Locate vegetarian-friendly
+          restaurants and explore detailed menus and ingredient info.
+        </li>
+        <li>
+          <strong>Personalized Recipes:</strong> Get ChatGPT-generated weekly
+          meal plans tailored to your dietary needs and budget.
+        </li>
+        <li>
+          <strong>Nutritional Info:</strong> Check detailed nutritional values
+          including vitamins, minerals, and protein content.
+        </li>
+        <li>
+          <strong>Barcode Scan:</strong> Use barcode scanning to check if a
+          product fits your vegetarian type.
+        </li>
+        <li>
+          <strong>Community Board:</strong> Post and share recipes, experiences,
+          and tips with fellow vegetarians.
+        </li>
+        <li>
+          <strong>User Profile:</strong> Kakao login integration and
+          customizable characters for fun user interaction.
+        </li>
+      </ul>
+
+      <h2>Team Member</h2>
+      <ul>
+        <li><strong>Chu Yulim:</strong> App Developer</li>
+      </ul>
+
+      <h2>Repository Structure</h2>
+      <ul>
+        <li><strong>drawable:</strong> Icons and image assets</li>
+        <li><strong>layout:</strong> XML files defining each page layout</li>
+        <li><strong>values:</strong> colors.xml and strings.xml</li>
+        <li><strong>foodPage:</strong> Barcode-based food search</li>
+        <li><strong>recipePage:</strong> Chatbot-based recipe suggestions</li>
+        <li><strong>restSearch:</strong> Restaurant locator</li>
+        <li><strong>MainActivity.kt:</strong> Core logic of the app</li>
+      </ul>
+
+      <h2>Branch Naming Rule</h2>
+      <p>
+        <code>ID/Feature/IssueNum</code> (e.g.
+        <code>jeonghyeonee/MakeMainPage/1</code>)
+      </p>
+
+      <h2>How to Contribute</h2>
+      <ol>
+        <li>Fork the repository</li>
+        <li>
+          Create a branch: <code>git checkout -b ID/feature/issueNum</code>
+        </li>
+        <li>Commit your changes</li>
+        <li>Push to your fork</li>
+        <li>Open a pull request</li>
+      </ol>
+
+      <h2>Links</h2>
+      <div class="project-links">
+        <a href="https://github.com/jeonghyeonee/jigu" target="_blank"
+          ><i class="fa fa-github"></i> GitHub</a
+        >
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 copyright">
+            <p>© <span id="current-year">2025</span> Lee JeongHyeon</p>
+          </div>
+          <div class="col-sm-2 top">
+            <span id="to-top">
+              <i class="fa fa-chevron-up" aria-hidden="true"></i>
+            </span>
+          </div>
+          <div class="col-sm-5 social">
+            <ul>
+              <li>
+                <a href="https://github.com/jeonghyeonee" target="_blank"
+                  ><i class="fa fa-github"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>

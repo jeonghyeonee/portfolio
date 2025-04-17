@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seoul Public Bike | Project Detail</title>
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
+      rel="stylesheet"
+    />
+    <style>
+      .project-detail-container {
+        padding: 80px 15px;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .project-detail-container h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #374054;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        margin-left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .project-detail-container h2::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 2px;
+        background: #3498db;
+        margin: 10px auto 0 auto;
+      }
+
+      .project-detail-container p,
+      .project-detail-container ul {
+        color: #74808a;
+        font-size: 1em;
+      }
+
+      .project-detail-container ul {
+        padding-left: 20px;
+      }
+
+      .project-links {
+        margin-top: 40px;
+        text-align: center;
+      }
+
+      .project-links a {
+        display: inline-block;
+        margin: 0 10px;
+        color: #3498db;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .project-links a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div
+      id="lead"
+      style="
+        background-image: url('images/bike_project.jpg');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <a
+        href="index.html"
+        style="
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          color: #ffffff;
+          background-color: rgba(0, 0, 0, 0.3);
+          padding: 8px 14px;
+          border-radius: 6px;
+          font-weight: bold;
+          text-decoration: none;
+          z-index: 1000;
+        "
+      >
+        ← Back to Portfolio
+      </a>
+
+      <!-- 타이틀 영역 -->
+      <div id="lead-content">
+        <h1 style="color: #ffffff">Seoul Public Bike Analyst</h1>
+        <h2>Business Analytics with ML | LightGBM + XGBoost</h2>
+        <a
+          href="assets/Public_Bike.pdf"
+          class="btn-rounded-white"
+          target="_blank"
+        >
+          View Presentation
+        </a>
+      </div>
+
+      <div id="lead-overlay"></div>
+      <div id="lead-down">
+        <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+      </div>
+    </div>
+
+    <div class="project-detail-container">
+      <h2>Summary</h2>
+      <p>
+        <strong>2023_BA_Project</strong> analyzes the Seoul Public Bike system
+        to develop strategies that reduce financial deficits. The project
+        predicts usage patterns using ensemble models to enhance system
+        efficiency.
+      </p>
+
+      <h2>Development Period</h2>
+      <ul>
+        <li><strong>Start:</strong> September 2023</li>
+        <li><strong>End:</strong> December 2023</li>
+      </ul>
+
+      <h2>Platform & Tech Stack</h2>
+      <ul>
+        <li><strong>OS:</strong> Windows, MacOS</li>
+        <li><strong>Language:</strong> Python 3.11</li>
+        <li><strong>IDE:</strong> Jupyter Notebook</li>
+        <li>
+          <strong>Libraries:</strong> pandas, numpy, scikit-learn, LightGBM,
+          XGBoost
+        </li>
+      </ul>
+
+      <h2>Team</h2>
+      <ul>
+        <li>
+          <strong>Lee Jeonghyeon:</strong> Data Preprocessing, ML Model,
+          Ensemble
+        </li>
+        <li><strong>Chu Yulim:</strong> Financial Analysis, ML Model</li>
+        <li>
+          <strong>Shin Dongwoo:</strong> Preprocessing, Optimization & Ensemble
+        </li>
+        <li><strong>Choi Junhyeok:</strong> Data Preprocessing, ML Model</li>
+      </ul>
+
+      <h2>Key Features</h2>
+      <ul>
+        <li>
+          Usage prediction using LightGBM and XGBoost based on time and location
+        </li>
+        <li>Identified key deficit factors through financial analysis</li>
+        <li>
+          Achieved improved performance with ensemble modeling (RMSE 1.71, R²
+          0.647)
+        </li>
+      </ul>
+
+      <h2>Troubleshooting</h2>
+      <ul>
+        <li>
+          <strong>Issue:</strong> Handling missing values & encoding station IDs
+        </li>
+        <li>
+          <strong>Solution:</strong> Label encoding and data cleaning improved
+          stability
+        </li>
+        <li>
+          <strong>Comparison:</strong> Ensemble model outperformed both LightGBM
+          and XGBoost individually
+        </li>
+      </ul>
+
+      <h2>Links</h2>
+      <div class="project-links">
+        <a
+          href="https://github.com/jeonghyeonee/2023_BA_Project"
+          target="_blank"
+          ><i class="fa fa-github"></i> GitHub</a
+        >
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 copyright">
+            <p>© <span id="current-year">2025</span> Lee JeongHyeon</p>
+          </div>
+          <div class="col-sm-2 top">
+            <span id="to-top">
+              <i class="fa fa-chevron-up" aria-hidden="true"></i>
+            </span>
+          </div>
+          <div class="col-sm-5 social">
+            <ul>
+              <li>
+                <a href="https://github.com/jeonghyeonee" target="_blank"
+                  ><i class="fa fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/jeonghyeonee" target="_blank"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>
