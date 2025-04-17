@@ -7,35 +7,119 @@
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
+      rel="stylesheet"
+    />
     <style>
-      .text-center {
+      .project-detail-container {
+        padding: 80px 15px;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .project-detail-container h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #374054;
         text-align: center;
+        position: relative;
+        display: inline-block;
+        margin-left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .project-detail-container h2::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 2px;
+        background: #3498db;
+        margin: 10px auto 0 auto;
+      }
+
+      .project-detail-container p,
+      .project-detail-container ul {
+        color: #74808a;
+        font-size: 1em;
+      }
+
+      .project-detail-container ul {
+        padding-left: 20px;
+      }
+
+      .project-links {
+        margin-top: 40px;
+        text-align: center;
+      }
+
+      .project-links a {
+        display: inline-block;
+        margin: 0 10px;
+        color: #3498db;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .project-links a:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
 
   <body>
-    <!-- Lead Section -->
     <div
       id="lead"
       style="
-        background-image: url('images/memoriary-cover.jpg');
+        background-image: url('images/memoriary-project.jpg');
         background-size: cover;
+        background-position: center;
       "
     >
+      <!-- Back Button 좌측 상단 고정 -->
+      <a
+        href="index.html"
+        style="
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          color: #ffffff;
+          background-color: rgba(0, 0, 0, 0.3);
+          padding: 8px 14px;
+          border-radius: 6px;
+          font-weight: bold;
+          text-decoration: none;
+          z-index: 1000;
+        "
+      >
+        ← Back to Portfolio
+      </a>
+
+      <!-- 타이틀 영역 -->
       <div id="lead-content">
-        <h1>Memoriary</h1>
-        <h2>Memory-Support App for the Elderly</h2>
+        <h1 style="color: #ffffff">MEMORIARY</h1>
+        <!-- 초록색 타이틀 -->
+        <h2>Assist Memory | Diary × AI × Health</h2>
+        <a
+          href="assets/Memoriary.pdf"
+          class="btn-rounded-white"
+          target="_blank"
+        >
+          View Memoriary Presentation
+        </a>
       </div>
+
+      <!-- 배경 어두운 오버레이 -->
       <div id="lead-overlay"></div>
+
+      <!-- 아래로 내려가는 아이콘 -->
       <div id="lead-down">
         <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
       </div>
     </div>
 
-    <!-- Main Content -->
-    <div class="container" style="padding: 50px 15px">
-      <h2 class="heading text-center">Summary</h2>
+    <div class="project-detail-container">
+      <h2>Summary</h2>
       <p>
         <strong>Memoriary</strong> is an innovative app designed to support the
         elderly in preventing memory loss by combining diary, to-do list, and
@@ -44,63 +128,113 @@
         in an aging society.
       </p>
 
-      <h2 class="heading text-center">Development Period</h2>
+      <h2>Development Period</h2>
       <ul>
         <li><strong>Start:</strong> September 2023</li>
         <li><strong>End:</strong> December 2023</li>
       </ul>
 
-      <h2 class="heading text-center">Platform & Tech Stack</h2>
+      <h2>Platform & Tech Stack</h2>
       <ul>
         <li><strong>OS:</strong> Android</li>
         <li><strong>Language:</strong> Kotlin</li>
         <li><strong>Database:</strong> RoomDB + Firebase</li>
         <li><strong>IDE:</strong> Android Studio</li>
-        <li><strong>APIs:</strong> OpenAI GPT, DALL·E2, Android Sensors</li>
+        <li><strong>APIs:</strong> OpenAI GPT, DALL-E2, Android Sensors</li>
       </ul>
 
-      <h2 class="heading text-center">Team</h2>
+      <h2>Team</h2>
       <ul>
         <li><strong>Lee Jeonghyeon:</strong> To-Do, Sign In, Nav Bar</li>
         <li><strong>Park Hyun Seo:</strong> Exercise, Quiz, My Page</li>
         <li><strong>Kim Siheon:</strong> Diary, Nav Bar</li>
       </ul>
 
-      <h2 class="heading text-center">Features</h2>
+      <h2>Main Features</h2>
       <ul>
-        <li><strong>Diary:</strong> Voice-based input + DALL·E2 thumbnails</li>
-        <li><strong>To-Do:</strong> Calendar + done list</li>
-        <li><strong>Exercise:</strong> Shake/clap using Android Sensor API</li>
-        <li><strong>Quiz:</strong> Daily GPT-based memory tests</li>
-        <li><strong>Membership:</strong> Login via ID/PW or fingerprint</li>
-        <li><strong>My Page:</strong> View/edit user profile</li>
+        <li>
+          <strong>Diary:</strong> Speech-to-Text input, DALL·E2 thumbnail
+          generation
+        </li>
+        <li>
+          <strong>To-Do List:</strong> Calendar integration, task management
+        </li>
+        <li>
+          <strong>Exercise:</strong> “Shake It Up”, “Clapping” using sensors
+        </li>
+        <li>
+          <strong>Quiz:</strong> AI-generated memory quizzes based on diary
+        </li>
+        <li>
+          <strong>Membership:</strong> Sign in via password or fingerprint
+        </li>
+        <li><strong>My Page:</strong> Profile management and sign out</li>
       </ul>
 
-      <h2 class="heading text-center">Troubleshooting & Solution</h2>
-      <p>
-        Faced issues with LiveData causing UI delays. Applied an Observer
-        pattern and asynchronous operations using background threads to ensure a
-        smooth user experience.
-      </p>
+      <h2>Contribution</h2>
+      <ul>
+        <li>
+          Designed and implemented core app functions: diary, quizzes, and to-do
+          list
+        </li>
+        <li>Integrated APIs and ensured accessibility for elderly users</li>
+        <li>Led debugging, UI testing, and UX refinement</li>
+      </ul>
 
-      <!-- Links Section -->
-      <div class="project-links text-center" style="margin-top: 50px">
-        <h2 class="heading">Links</h2>
-        <a href="https://github.com/jeonghyeonee/Memoriary" target="_blank">
-          <i class="fa fa-github"></i> GitHub
-        </a>
-        <span style="margin: 0 15px"></span>
-        <a href="https://www.youtube.com/watch?v=j5adWDyW67Q" target="_blank">
-          <i class="fa fa-youtube-play"></i> YouTube
-        </a>
+      <h2>Troubleshooting</h2>
+      <ul>
+        <li>
+          <strong>Issue:</strong> UI freezing due to database queries on main
+          thread
+        </li>
+        <li>
+          <strong>Solution:</strong> Replaced LiveData with Observer pattern and
+          suggested coroutines
+        </li>
+        <li>
+          <strong>Trade-off:</strong> Observer delayed sync but fixed blocking
+          behavior
+        </li>
+      </ul>
+
+      <h2>Links</h2>
+      <div class="project-links">
+        <a href="https://github.com/jeonghyeonee/Memoriary" target="_blank"
+          ><i class="fa fa-github"></i> GitHub</a
+        >
+        <a href="https://www.youtube.com/watch?v=j5adWDyW67Q" target="_blank"
+          ><i class="fa fa-youtube-play"></i> YouTube</a
+        >
       </div>
     </div>
 
-    <!-- Footer -->
-    <footer
-      style="padding: 30px 0; text-align: center; background-color: #f2f2f5"
-    >
-      <p>&copy; 2025 Lee JeongHyeon</p>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 copyright">
+            <p>© <span id="current-year">2025</span> Lee JeongHyeon</p>
+          </div>
+          <div class="col-sm-2 top">
+            <span id="to-top">
+              <i class="fa fa-chevron-up" aria-hidden="true"></i>
+            </span>
+          </div>
+          <div class="col-sm-5 social">
+            <ul>
+              <li>
+                <a href="https://github.com/jeonghyeonee" target="_blank"
+                  ><i class="fa fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/jeonghyeonee" target="_blank"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
