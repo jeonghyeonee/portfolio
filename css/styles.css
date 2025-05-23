@@ -895,3 +895,27 @@ footer {
   color: #74808a;
   font-size: 0.9em;
 }
+
+@media only screen and (max-width: 750px) {
+  #leadership-timeline:before,
+  #leadership-timeline:after {
+    left: 23px;
+  }
+
+  #leadership-timeline .vtimeline-date {
+    width: auto;
+    text-align: left;
+    position: relative;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: 70px;
+  }
+
+  #leadership-timeline .vtimeline-icon {
+    margin-left: 0;
+  }
+
+  #leadership-timeline .vtimeline-content {
+    margin-left: 70px;
+  }
+}
